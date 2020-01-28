@@ -66,7 +66,9 @@ public struct Configuration {
         self.cachePath = cachePath
     }
 
-    /// Initialize by copying a given configuration
+    /// Creates a Configuration by copying an existing configuration.
+    ///
+    /// - parameter copying:    The existing configuration to copy.
     internal init(copying configuration: Configuration) {
         rulesWrapper = configuration.rulesWrapper
         fileGraph = configuration.fileGraph
